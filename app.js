@@ -103,7 +103,8 @@ app.post("/admission", async (req, res) => {
   });
 });
 app.get("/read", async (req, res) => {
-  res.send("Ashik");
+  let data = await tblAdmission.find();
+  res.send(data);
 });
 app.get("/viewstudent", async (req, res) => {
   let data = await tblAdmission.find();
