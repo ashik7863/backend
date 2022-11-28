@@ -1,0 +1,26 @@
+const mongoose = require("mongoose");
+const tblAdmission = new mongoose.Schema({
+  admdate: Date,
+  formno: Number,
+  course: String,
+  session: String,
+  batch: String,
+  studentname: String,
+  fathername: String,
+  village: String,
+  postoffice: String,
+  policestation: String,
+  block: String,
+  panchayet: String,
+  district: String,
+  pin: String,
+  caste: String,
+  dob: String,
+  gender: String,
+  stdcontact: String,
+  guardcontact: String,
+  stdaadhaar: String,
+  stdwhatsapp: String,
+  email: String,
+});
+module.exports = mongoose.model("studentdatas", tblAdmission);
