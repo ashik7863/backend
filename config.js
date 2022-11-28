@@ -1,4 +1,4 @@
 const mongoose = require("mongoose");
-MONGO_URL = mongoose.connect(
+mongoose.connect(
   "mongodb+srv://ashik123:7872145792@cluster0.iptlfq6.mongodb.net/youth?retryWrites=true&w=majority"
 );

@@ -2,7 +2,7 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const app = express();
 const cors = require("cors");
-require("dotenv").config();
+require("./config");
 const playlists = require("./playlists");
 const tblAdmission = require("./schema/admissionSchema");
 const tblInstallment = require("./schema/installmentSchema");
