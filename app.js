@@ -103,8 +103,7 @@ app.post("/admission", async (req, res) => {
   });
 });
 app.get("/", async (req, res) => {
-  let data = await tblAdmission.find();
-  res.send(data);
+  res.send("Hello");
 });
 app.get("/viewstudent", async (req, res) => {
   let data = await tblAdmission.find();
