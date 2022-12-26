@@ -102,7 +102,7 @@ app.post("/admission", async (req, res) => {
     status: true,
   });
 });
-app.get("/read", async (req, res) => {
+app.get("/", async (req, res) => {
   let data = await tblAdmission.find();
   res.send(data);
 });
